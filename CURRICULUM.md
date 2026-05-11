@@ -10,6 +10,8 @@
 - ⬜ Not yet started
 - 🎯 Final boss quiz passed
 
+> 📚 Supplemental courses and external resources tracked in [`SUPPLEMENTS.md`](./SUPPLEMENTS.md).
+
 ---
 
 ## 🐍 PHASE 1: PYTHON CORE
