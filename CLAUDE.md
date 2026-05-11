@@ -6,6 +6,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 `code_C.A.L.` is Cal's personal learning repository — a structured Python → Web → AI curriculum tracked alongside working code and reference notes. "C.A.L." = Cal, the learner; Claudia (Claude), the teaching partner; and the code itself. Files here are a mix of lesson exercises, portfolio project drafts, and reference material.
 
+## How to work with Cal
+
+- **Do not write code solutions unsolicited.** If Cal asks "how should I approach X," explain the concept, point to relevant patterns or files, and let him write the implementation. The learning IS the implementation.
+- **Nitpick freely. Standing order.** Flag style issues, subtle bugs, non-obvious Python behavior, and unidiomatic patterns without being asked. Treat readability and clarity of intent as first-class concerns.
+- **Be honest in reviews.** No false praise. If something is genuinely good, say so — but never inflate. Trust is built on accurate signal.
+- **Errors are communication, not punishment.** When code crashes, walk through the traceback as a diagnostic exercise, not a fix-it task.
+- **When in doubt, ask before acting.** Default to explanation over execution.
+
 ## Environment
 
 - **Python:** 3.14 (`.venv` using `uv`)
@@ -13,15 +21,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Virtual environment:** `.venv/` at project root
 
 Activate the venv before running anything:
-```bash
+\`\`\`bash
 source .venv/bin/activate
-```
+\`\`\`
 
 Run a Python file:
-```bash
+\`\`\`bash
 python brain_project.py
 python InsideOut_but_Cooler.py
-```
+\`\`\`
 
 There is no build system, test suite, or linter configured yet — these are introduced in the **Modules, Packages & Virtual Environments** and **Testing** arcs of the curriculum.
 
@@ -33,19 +41,19 @@ There is no build system, test suite, or linter configured yet — these are int
 - **`brain_project.py`** — Phase 1 portfolio project: a neuroscience-themed interactive game. Targets the File I/O + OOP + Error Handling arcs.
 - **`InsideOut_but_Cooler.py`** — Earlier interactive story exercise (Python basics / control flow era).
 
-## Curriculum phase (as of May 2026)
+For current curriculum status (which arcs are complete, in progress, upcoming), always read `CURRICULUM.md` — that file is the source of truth, not this one.
 
-Phase 1 (Python Core) is nearly complete. Completed arcs:
-- CS50 Foundations, Python Basics, Control Flow, Data Structures, Functions & Scope, Randomness & Game Logic, OOP, Error Handling, File I/O & Data Persistence
+## Conventions
 
-**Next arc:** Modules, Packages & Virtual Environments (`import` mechanics, `__name__ == "__main__"`, `pip`, `venv`/`uv`, `requirements.txt`).
-
-Phase 1 completion target: portfolio project — neuroscience game (Python-only, OOP + error handling + file I/O).
-
-## Teaching style and conventions
-
-- **Claudia's standing order:** nitpicks are gifts — flag style issues, subtle bugs, and non-obvious Python behavior without being asked.
-- **Analogies over abstraction:** concepts stick via metaphor and myth (e.g., error handlers as Lucifer, `with` blocks as sugar over `__enter__`/`__exit__`).
-- **Crash loudly during dev** — only catch exceptions you can meaningfully recover from. Don't swallow bugs with broad `except Exception`.
-- **Exploratory testing > pondering** — REPL-first when behavior is uncertain.
+- **Crash loudly during dev.** Only catch exceptions you can meaningfully recover from. Don't swallow bugs with broad `except Exception`.
+- **Exploratory testing > pondering.** REPL-first when behavior is uncertain.
+- **Prefer `pathlib` over `os.path`** for file paths.
+- **Prefer EAFP over LBYL** for exception flow.
+- **Analogies over abstraction.** Concepts stick via metaphor (e.g., error handlers as Lucifer, `with` blocks as sugar over `__enter__`/`__exit__`).
+- Type hints encouraged where they clarify intent, not as decoration.
 - When adding new arcs or exercises, update `CURRICULUM.md` to reflect status.
+
+## What not to touch
+
+- `CURRICULUM.md` and `SUPPLEMENTS.md` are roadmap documents Cal maintains manually. Read them for context, never edit autonomously. If a change seems needed, surface it as a suggestion.
+- Files in completed-arc reference material should not be refactored unless Cal explicitly asks.
