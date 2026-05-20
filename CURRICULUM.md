@@ -29,16 +29,13 @@
 - ✅ 🎯 **Object-Oriented Programming** (April 2026) — classes, `__init__`, `self`, instance vs class attributes, inheritance, `super()`, polymorphism, MRO, dunder methods, OOP in the wild (Flask, LangChain, PyTorch)
 - ✅ 🎯 **Error Handling & Exceptions** (April 2026) — `try`/`except`/`else`/`finally`, exception hierarchy, `raise`/`as`, custom exception classes, LBYL vs EAFP, defensive programming philosophy
 - ✅ 🎯 **File I/O & Data Persistence** (April 2026) — file mental model (bytes/ledger entries/file descriptors), modes (r/w/a) with semantic contracts, `with` blocks as sugar over `__enter__`/`__exit__` protocol, reading patterns (`.read`/`.readlines`/iteration), `pathlib` with `/` as `__truediv__` overload, UTF-8 encoding deep dive (variable-width, combining characters), defensive per-row parsing, `csv.DictReader`/`DictWriter`, `json` module + 6-type constraint, streaming pattern for large files
-- ✅ 🎯 **Modules, Packages & Virtual Environments** — *~4-5 lessons*
-  `import` mechanics, `__name__ == "__main__"`, creating your own modules, `__init__.py`, packages, `pip`, `venv`/`uv`, `requirements.txt`, PyPI ecosystem. The "adulting" of Python.
+- ✅ 🎯 **Modules, Packages & Virtual Environments** (May 2026) — `import` mechanics, `__name__ == "__main__"`, creating your own modules, `__init__.py`, packages, `pip`, `venv`/`uv`, `requirements.txt`, PyPI ecosystem. The "adulting" of Python.
+- ✅ 🎯 **Decorators & Higher-Order Functions** (May 2026) — Functions as first-class citizens, closures, `*args`/`**kwargs` deep dive, writing decorators, `@property`, `functools.wraps`, real-world decorator patterns (logging, timing, auth). Bridge to FastAPI, LangChain, Flask.
 
 ### Current & Upcoming
 
 - ⬜ **Iterators, Generators & Comprehensions (Advanced)** — *~4-5 lessons*
   Iterator protocol, `yield` keyword, generator expressions vs list comprehensions, lazy evaluation, `itertools` module, memory efficiency at scale.
-
-- ⬜ **Decorators & Higher-Order Functions** — *~5-6 lessons*
-  Functions as first-class citizens, closures, `*args`/`**kwargs` deep dive, writing decorators, `@property`, `functools.wraps`, real-world decorator patterns (logging, timing, auth). Bridge to FastAPI, LangChain, Flask.
 
 - ⬜ **Working with APIs & HTTP** — *~4-5 lessons*
   `requests` library, HTTP methods (GET/POST/PUT/DELETE), status codes, headers, auth patterns, JSON payloads, rate limiting, error handling for network calls (callback to Error Handling arc). First real "talking to the internet" experience.
