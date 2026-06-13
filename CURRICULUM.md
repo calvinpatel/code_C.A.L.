@@ -32,11 +32,10 @@
 - ✅ 🎯 **Modules, Packages & Virtual Environments** (May 2026) — `import` mechanics, `__name__ == "__main__"`, creating your own modules, `__init__.py`, packages, `pip`, `venv`/`uv`, `requirements.txt`, PyPI ecosystem. The "adulting" of Python.
 - ✅ 🎯 **Decorators & Higher-Order Functions** (May 2026) — Functions as first-class citizens, closures, `*args`/`**kwargs` deep dive, writing decorators, `@property`, `functools.wraps`, real-world decorator patterns (logging, timing, auth). Bridge to FastAPI, LangChain, Flask.
 - ✅ 🎯 **Working with APIs & HTTP** (June 2026) — `requests` library, HTTP methods (GET/POST/PUT/DELETE), status codes, headers, auth patterns, JSON payloads, rate limiting, error handling for network calls (callback to Error Handling arc). First real "talking to the internet" experience.
+- ✅ 🎯 **Iterators, Generators & Comprehensions** (June 2026) — Iterator protocol, `yield` keyword, generator expressions vs list comprehensions, lazy evaluation, `itertools` module, memory efficiency at scale.
+
 
 ### Current & Upcoming
-
-- ⬜ **Iterators, Generators & Comprehensions (Advanced)** — *~4-5 lessons*
-  Iterator protocol, `yield` keyword, generator expressions vs list comprehensions, lazy evaluation, `itertools` module, memory efficiency at scale.
 
 - ⬜ **Type Hints & Static Analysis** — *~3-4 lessons*
   Type annotations, `typing` module, `Optional`, `Union`, `List[str]` vs `list[str]`, generic types, `mypy`, why types matter in large codebases. Prep for modern Python and FastAPI.
