@@ -33,20 +33,16 @@
 - ✅ 🎯 **Decorators & Higher-Order Functions** (May 2026) — Functions as first-class citizens, closures, `*args`/`**kwargs` deep dive, writing decorators, `@property`, `functools.wraps`, real-world decorator patterns (logging, timing, auth). Bridge to FastAPI, LangChain, Flask.
 - ✅ 🎯 **Working with APIs & HTTP** (June 2026) — `requests` library, HTTP methods (GET/POST/PUT/DELETE), status codes, headers, auth patterns, JSON payloads, rate limiting, error handling for network calls (callback to Error Handling arc). First real "talking to the internet" experience.
 - ✅ 🎯 **Iterators, Generators & Comprehensions** (June 2026) — Iterator protocol, `yield` keyword, generator expressions vs list comprehensions, lazy evaluation, `itertools` module, memory efficiency at scale.
+- ✅ 🎯 **Type Hints & Static Analysis** (June 2026) — Type annotations, `typing` module, `Optional`, `Union`, `List[str]` vs `list[str]`, generic types, `mypy`, why types matter in large codebases. Prep for modern Python and FastAPI.
 
 
 ### Current & Upcoming
-
-- ⬜ **Type Hints & Static Analysis** — *~3-4 lessons*
-  Type annotations, `typing` module, `Optional`, `Union`, `List[str]` vs `list[str]`, generic types, `mypy`, why types matter in large codebases. Prep for modern Python and FastAPI.
 
 - ⬜ **Async Python** *(optional — can defer)* — *~4-5 lessons*
   `async`/`await`, event loops, `asyncio`, concurrent vs parallel, when async matters vs when it's over-engineering. Prereq for modern web frameworks and LLM streaming.
 
 - ⬜ **Testing** *(optional but highly recommended)* — *~3-4 lessons*
   `pytest` basics, writing unit tests, fixtures, mocking, TDD mindset. Separates hobbyists from engineers.
-
-**Phase 1 completion target:** Portfolio Project #1 — Neuroscience game (Python-only, leverages OOP + error handling + file I/O)
 
 ---
 
