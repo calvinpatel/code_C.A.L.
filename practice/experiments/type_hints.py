@@ -11,11 +11,6 @@ name = find("nobody")
 if name is not None:        # ← you PROVE to the enforcer that None is gone
     print(name.upper())     # inside here, name is str — squiggle vanishes
 
-v = find("cal")
-reveal_type(v)  #run with mypy, see what shows up
-if v is not None:
-    reveal_type(v)
-
 from typing import Protocol, reveal_type
 
 
