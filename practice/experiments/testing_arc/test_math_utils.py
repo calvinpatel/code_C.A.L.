@@ -1,7 +1,8 @@
 import pytest
 
 # test_math_utils.py
-from math_utils import add, safe_divide
+from math_utils import add, safe_divide, Accumulator
+
 
 def test_add_positives():
     result = add(2, 3)
@@ -22,3 +23,15 @@ def test_safe_divide_by_zero_raises():
 ])
 def test_add_param(a, b, expected):
     assert add(a, b) == expected
+
+@pytest.fixture
+def acc():
+    return Accumulator()
+
+def test_first_accumulator(acc):
+    acc.add(5)
+    assert acc.total == 5
+
+def test_second_accumulator(acc):
+    acc.add(10)
+    assert acc.total == 10
