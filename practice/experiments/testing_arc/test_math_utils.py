@@ -2,6 +2,7 @@ import pytest
 import requests
 from math_utils import add, safe_divide, Accumulator
 from api_client import get_user_name
+from safety import find_allergy_conflicts
 
 
 def test_add_positives():
@@ -67,3 +68,22 @@ def test_get_user_name_404_raises(monkeypatch):
 
     with pytest.raises(requests.exceptions.HTTPError):
         get_user_name(99)
+
+
+def test_amoxicillin_flags_penicillin_allergy():
+    prescribed = ["amoxicillin"]
+    allergies = ["penicillin"]
+
+    result = find_allergy_conflicts(prescribed, allergies)
+
+    assert "amoxicillin" in result
+
+
+@pytest.mark.parametrize("prescribed, allergies, expected", [
+    (["amoxicillin"], ["penicillin"], ["amoxicillin"]),
+    (["augmentin"], ["penicillin"], ["augmentin"]),
+    (["lisinopril"], ["penicillin"], []),
+    ([], ["penicillin"], []),
+])
+def test_find_allergy_conflicts(prescribed, allergies, expected):
+    assert find_allergy_conflicts(prescribed, allergies) == expected
