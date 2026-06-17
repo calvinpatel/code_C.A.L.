@@ -37,17 +37,17 @@
 - ✅ 🎯 **Testing** (June 2026) — `pytest` basics, writing unit tests, fixtures, mocking, TDD mindset. Separates hobbyists from engineers.
 - ✅ 🎯 **Async Python** (June 2026) — `async`/`await`, event loops, `asyncio`, concurrent vs parallel, when async matters vs when it's over-engineering. Prereq for modern web frameworks and LLM streaming.
 
-
 ---
 
 ## 🌐 PHASE 2: WEB FOUNDATIONS
 
 *Goal: Build full-stack applications. Understand how the web actually works — frontend, backend, database, deployment.*
 
-### Backend
+### Completed Arcs
 
-- ⬜ **HTTP & Web Fundamentals** — *~3-4 lessons*
-  Client-server model, request/response cycle, REST principles, statelessness, cookies/sessions, CORS, HTTPS. The mental model everything else rests on.
+- ✅ 🎯 **HTTP & Web Fundamentals** (June 2026) — Client-server model, request/response cycle, REST principles, statelessness, cookies/sessions, CORS, HTTPS. The mental model everything else rests on.
+
+### Backend
 
 - ⬜ **SQL & Databases** — *~6-8 lessons*
   Relational model, SELECT/INSERT/UPDATE/DELETE, JOINs, indexes, schema design, normalization, PostgreSQL basics. Working with data at scale.
