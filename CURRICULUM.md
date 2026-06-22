@@ -1,6 +1,5 @@
 # Cal's Python → Web → AI Curriculum
 
-> *The trio's official roadmap. Cal, Cortex, and Claudia — we push, we fight, we return not None.* ⚔️
 
 **Format:** Topic-level with rough lesson estimates. Lessons emerge organically within each arc. Independent of Angela Yu's 100 Days of Code, with parallel coverage noted where relevant.
 
@@ -46,11 +45,9 @@
 ### Completed Arcs
 
 - ✅ 🎯 **HTTP & Web Fundamentals** (June 2026) — Client-server model, request/response cycle, REST principles, statelessness, cookies/sessions, CORS, HTTPS. The mental model everything else rests on.
+- ✅ 🎯 **SQL & Databases** (June 2026) — Relational model, SELECT/INSERT/UPDATE/DELETE, JOINs, indexes, schema design, normalization, PostgreSQL basics. Working with data at scale.
 
 ### Backend
-
-- ⬜ **SQL & Databases** — *~6-8 lessons*
-  Relational model, SELECT/INSERT/UPDATE/DELETE, JOINs, indexes, schema design, normalization, PostgreSQL basics. Working with data at scale.
 
 - ⬜ **SQLAlchemy / ORMs** — *~4-5 lessons*
   Why ORMs exist, models, relationships, queries, migrations (Alembic), when to drop to raw SQL. Python's bridge to databases.
@@ -73,8 +70,6 @@
 
 - ⬜ **Full-Stack Application Architecture** — *~3-4 lessons*
   Connecting React ↔ FastAPI, state management, API design patterns, auth flows end-to-end, deployment basics (Render, Vercel, Railway).
-
-**Phase 2 completion target:** Portfolio Project #2 — Health web app (full-stack, real DB, user-facing)
 
 ---
 
@@ -102,8 +97,6 @@
 
 - ⬜ **Production AI Engineering** — *~4-5 lessons*
   Observability (LangSmith, Langfuse), evals, prompt versioning, A/B testing LLM outputs, cost/latency monitoring, guardrails, fallback patterns. What separates a demo from a product.
-
-**Phase 3 completion target:** Portfolio Project #3 — AI-powered health tool with RAG. Potential alternate: Astrology app (Co-Star-inspired, personality-driven LLM readings).
 
 ---
 
@@ -138,5 +131,5 @@
 
 ---
 
-*Last updated: April 2026*
-*Maintained by: Cal + Claudia*
+*Last updated: June 2026*
+*Maintained by: Cal*
