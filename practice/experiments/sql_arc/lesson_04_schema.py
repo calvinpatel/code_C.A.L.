@@ -47,5 +47,9 @@ cur.execute("""
     CREATE INDEX IF NOT EXISTS idx_patients_name ON patients(name)
 """)
 
+for step in cur.execute(
+        "EXPLAIN QUERY PLAN SELECT name FROM patients"):
+    print(step[-1])
+
 conn.commit()
 conn.close()
