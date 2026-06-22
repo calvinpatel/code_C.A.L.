@@ -31,3 +31,8 @@ build/
 .coverage
 .pytest_cache/
 htmlcov/
+
+# SQL / Databases
+*.db
+*.sqlite
+*.sqlite3
