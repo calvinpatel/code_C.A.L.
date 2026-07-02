@@ -46,11 +46,9 @@
 
 - ✅ 🎯 **HTTP & Web Fundamentals** (June 2026) — Client-server model, request/response cycle, REST principles, statelessness, cookies/sessions, CORS, HTTPS. The mental model everything else rests on.
 - ✅ 🎯 **SQL & Databases** (June 2026) — Relational model, SELECT/INSERT/UPDATE/DELETE, JOINs, indexes, schema design, normalization, PostgreSQL basics. Working with data at scale.
+- ✅ 🎯 **SQLAlchemy / ORMs** (July 2026) — Why ORMs exist, models, relationships, queries, migrations (Alembic), when to drop to raw SQL. Python's bridge to databases.
 
 ### Backend
-
-- ⬜ **SQLAlchemy / ORMs** — *~4-5 lessons*
-  Why ORMs exist, models, relationships, queries, migrations (Alembic), when to drop to raw SQL. Python's bridge to databases.
 
 - ⬜ **FastAPI** — *~6-8 lessons*
   Route handlers, Pydantic models, dependency injection, authentication, background tasks, async endpoints, OpenAPI docs. Modern Python's favorite web framework and your bridge to AI integration.
