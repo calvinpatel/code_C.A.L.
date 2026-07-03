@@ -34,7 +34,7 @@
 - ✅ 🎯 **Iterators, Generators & Comprehensions** (June 2026) — Iterator protocol, `yield` keyword, generator expressions vs list comprehensions, lazy evaluation, `itertools` module, memory efficiency at scale.
 - ✅ 🎯 **Type Hints & Static Analysis** (June 2026) — Type annotations, `typing` module, `Optional`, `Union`, `List[str]` vs `list[str]`, generic types, `mypy`, why types matter in large codebases. Prep for modern Python and FastAPI.
 - ✅ 🎯 **Testing** (June 2026) — `pytest` basics, writing unit tests, fixtures, mocking, TDD mindset. Separates hobbyists from engineers.
-- ✅ 🎯 **Async Python** (June 2026) — `async`/`await`, event loops, `asyncio`, concurrent vs parallel, when async matters vs when it's over-engineering. Prereq for modern web frameworks and LLM streaming.
+- ⬜ **Async Python** (re-slotted into the FastAPI arc, pre-L6) — `async`/`await`, event loops, `asyncio`, concurrent vs parallel, when async matters vs when it's over-engineering. Prereq for modern web frameworks and LLM streaming.
 
 ---
 
