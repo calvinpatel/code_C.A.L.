@@ -82,8 +82,7 @@
 - ✅ 🎯 **SQL & Databases** (June 2026) — Relational model, SELECT/INSERT/UPDATE/DELETE, JOINs, indexes, schema design, normalization, transactions/ACID, SQL injection + parameterized queries, PostgreSQL basics. Working with data at scale.
 - ✅ 🎯 **SQLAlchemy / ORMs** (July 2026) — Why ORMs exist, models, relationships, queries, migrations (Alembic), when to drop to raw SQL. Python's bridge to databases. "The ORM rewards SQL knowledge, it doesn't replace it."
 - ✅ 🎯 **FastAPI** (July 2026) — Route handlers, Pydantic models, dependency injection (fixtures foreshadowed this), background tasks, async endpoints (Async Python arc lands here, pre-L6), OpenAPI docs. Modern Python's favorite web framework and my bridge to AI integration.
-  
-- **Security thread (explicit, not a footnote):** OAuth2/JWT flows, secrets hygiene, PHI-adjacent data handling, threat-modeling lite. Health-AI targets make this non-negotiable — the SQL injection instinct, promoted to a standing thread.
+- ✅ 🎯**Security thread** (July 2026) — OAuth2/JWT flows, secrets hygiene, PHI-adjacent data handling, threat-modeling lite. Health-AI targets make this non-negotiable — the SQL injection instinct, promoted to a standing thread.
 
 ### Frontend *(compressed — demo-grade, not mastery)*
 
