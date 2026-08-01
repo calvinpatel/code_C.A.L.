@@ -1,0 +1,26 @@
+.nav {
+    background-color: #5c9688;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 24px;
+}
+
+.card {
+    width: 150px;
+    height: 80px;
+    background-color: #ff7cb5;
+    border: 2px solid crimson;
+}
+
+.row {
+    background-color: #ffb176;
+    display: flex;
+}
+
+

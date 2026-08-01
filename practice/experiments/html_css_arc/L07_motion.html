@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L7 — Motion</title>
+    <style>
+        .card {
+            width: 240px;
+            padding: 16px;
+            border: 2px solid #334;
+            border-radius: 8px;
+            background-color: #f5f5ff;
+            transition: background-color 300ms ease;
+        }
+        .card:hover {
+            background-color: #c9bdf2;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); opacity: 1; }
+            to { transform: scale(1.4); opacity: 0.5; }
+        }
+        .dot {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;    /* radius ≥ half the box → circle */
+            background: #534ab7;
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            .dot {
+                animation: pulse 900ms ease-in-out infinite alternate;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Hover me</h2>
+        <p>State change, shown happening.</p>
+    </div>
+    <div class="dot"></div>
+</body>
+</html>

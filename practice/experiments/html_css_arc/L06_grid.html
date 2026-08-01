@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>L6 — floats, then grid</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            border: 3px solid navy;
+            background: lavender;
+        }
+        .gallery .card {
+            width: 120px;
+            height: 80px;
+            background: coral;
+        }
+        .dash {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 50px);
+            gap: 8px;
+            margin-top: 24px;
+            grid-template-areas:
+                "head"
+                "side"
+                "main"
+                "foot";
+        }
+        .dash > * {
+            background: thistle;
+        }
+        .sidebar {
+            grid-area: side;
+            background: coral;
+        }
+        .top { grid-area: head; }
+        .content { grid-area: main; }
+        .status { grid-area: foot; }
+        @media (min-width: 700px) {
+            .dash {
+                grid-template-columns: 200px 1fr;
+                grid-template-rows: 60px 220px 40px;
+                grid-template-areas:
+                    "side head"
+                    "side main"
+                    "side foot";
+            }
+            .sidebar { grid-area: side; }
+            .top { grid-area: head; }
+            .content { grid-area: main; }
+            .status { grid-area: foot; }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="card">A</div>
+        <div class="card">B</div>
+        <div class="card">C</div>
+    </div>
+    <p class="after">
+        This paragraph comes after the gallery. It has quite a lot of text in it,
+        enough to produce several line boxes at a normal viewport width, which is
+        exactly the point of writing this much filler prose here.
+    </p>
+    <div class="dash">
+        <aside class="sidebar">nav</aside>
+        <header class="top">header</header>
+        <main class="content">main</main>
+        <footer class="status">footer</footer>
+    </div>
+</body>
+</html>

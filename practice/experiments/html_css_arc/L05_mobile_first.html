@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>L5 Mobile First</title>
+    <style>
+        body {
+            background: white;
+        }
+        .row {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+        }
+        .card {
+            background: lightblue;
+            padding: 1rem;
+        }
+        @media (min-width: 600px) {
+            .row {
+                flex-direction: row;
+                gap: 48px;
+            }
+        }
+        @media (min-width: 900px) {
+            .card {
+                flex-grow: 1;
+            }
+            .row {
+                gap: 12px
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="row">
+        <div class="card">One</div>
+        <div class="card">Two</div>
+        <div class="card">Three</div>
+    </div>
+
+</body>
+</html>
