@@ -86,8 +86,7 @@
 
 ### Frontend *(compressed — demo-grade, not mastery)*
 
-- ⬜ **HTML & CSS Foundations** — *~3 lessons* · **W3**
-  Semantic HTML, Flexbox, Grid, responsive design. The minimum viable frontend.
+- ✅ 🎯 **HTML & CSS Foundations** (July 2026) — Semantic HTML, Flexbox, Grid, responsive design, motion. The minimum viable frontend.
 
 - ⬜ **JavaScript for Python Developers** — *~3–4 lessons* · **W3–4**
   Syntax differences, async JS, fetch API, DOM manipulation. Leveraging existing CS50 JS exposure.
