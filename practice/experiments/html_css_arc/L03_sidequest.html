@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L3 side quest</title>
+  <style>
+    .lab        { background-color: #eeeeee; margin-bottom: 28px; padding: 10px; }
+    .tint       { background-color: #bcd9ff; }
+    .tint2      { background-color: #ffd2a8; }
+
+    .wide       { width: 300px; height: 40px; }
+    .flexhome   { display: flex; }
+
+    .flexwrap   { display: flex; }
+    .only       { height: 30px; }
+
+    .flexpara   { display: flex; }
+
+    .nav        { display: flex; justify-content: space-between; }
+
+    .ibchild { display: inline-block; width: 120px; height: 30px; }
+
+    .fr { display: block flow-root; }
+  </style>
+</head>
+<body>
+
+  <!-- LAB A: same span, two homes -->
+  <div class="lab">
+    <div><span class="wide tint">A1 plain parent</span></div>
+    <div class="flexhome"><span class="wide tint">A2 flex parent</span></div>
+  </div>
+
+  <!-- LAB B: the lone child -->
+  <div class="lab">
+    <div><div class="only tint2">B1 lone child, plain wrapper</div></div>
+    <div class="flexwrap"><div class="only tint2">B2 lone child, flex wrapper</div></div>
+  </div>
+
+  <!-- LAB C: flex on a paragraph -->
+  <div class="lab">
+    <p class="flexpara">Some <strong>bold</strong> text here</p>
+  </div>
+
+  <!-- LAB D: grandchildren -->
+  <div class="lab nav">
+    <span class="brand">NotePilot</span>
+    <div class="links">
+      <a href="#">Notes</a>
+      <a href="#">Patients</a>
+    </div>
+  </div>
+
+<!-- LAB E: does inline-block keep its inner half? -->
+  <div class="lab flexwrap">
+    <div class="ibchild tint2">E</div>
+  </div>
+
+<div class="lab"><div class="fr">F</div></div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #f7f7f5;
+}
+
+h1 {
+    color: #2c4a7c;
+}
+
+p {
+    color: #444444;
+}
+
+header {
+    background-color: #dce6f2;
+    padding: 20px;
+}
+
+footer p {
+    background-color: #f0d9d9;
+}
+
+.tagline{
+    color: #b03030;
+}
+
+p {
+    color: #009900;
+}
+
+#tagline-line {
+    color: #0066cc;
+}
+
+body header p.tagline {
+    color: #ff8800;
+}
+
+section {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 20px;
+    border: 4px solid #2c4a7c;
+    margin: 30px;
+    background-color: #ffffff;
+}
+

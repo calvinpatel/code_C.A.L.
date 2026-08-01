@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L4 — Formatting Contexts Lab</title>
+<style>
+  /* the UA stylesheet puts a margin on <body>. zero it so every number is ours. */
+  body { margin: 0; }
+  h2   { margin: 0; }
+
+  /* outline: draws a line around the box like border, BUT it is painted
+     OUTSIDE the box and consumes ZERO layout space. the only way to make
+     a box visible without moving anything. */
+  .box { outline: 2px solid #c0392b; }
+
+  /* ---------- LAB A: two siblings, both with margins ---------- */
+  .a-top    { height: 40px; background-color: #cfe8cf; margin-bottom: 40px; }
+  .a-bottom { height: 40px; background-color: #f2cccc; margin-top:    30px; }
+
+  /* ---------- LAB B: a parent with nothing of its own ---------- */
+  .b-ruler  { height: 20px; background-color: #dddddd; }
+  .b-parent {              background-color: #dde4f5; }
+  .b-child  { height: 40px; background-color: #cfe8cf; margin-top: 50px; }
+
+  /* ---------- LAB C: identical to B, plus 1px of padding ---------- */
+  .c-ruler { height: 20px; background-color: #dddddd; }
+  .c-pad   { padding-top: 1px; background-color: #dde4f5; }
+  .c-child { height: 40px; background-color: #cfe8cf; margin-top: 50px; }
+
+  /* ---------- LAB D: two children, both with margins ---------- */
+  .d-ruler { height: 20px; background-color: #dddddd; }
+  .d-tall  { background-color: #dde4f5; }
+  .d-child { height: 40px; background-color: #cfe8cf;
+             margin-top: 20px; margin-bottom: 60px; }
+
+  /* ---------- LAB E: separation. padding-top ONLY ---------- */
+  .e-ruler { height: 20px; background-color: #dddddd; }
+  .e-pad   { padding-top: 1px; background-color: #dde4f5; }
+  .e-child { height: 40px; background-color: #cfe8cf;
+             margin-top: 50px; margin-bottom: 60px; }
+  .e-after { height: 20px; background-color: #f5dede; }
+
+  /* ---------- LAB F: the seal. no padding at all ---------- */
+  .f-ruler { height: 20px; background-color: #dddddd; }
+  .f-root  { display: flow-root; background-color: #dde4f5; }
+  .f-child { height: 40px; background-color: #cfe8cf;
+             margin-top: 50px; margin-bottom: 60px; }
+  .f-after { height: 20px; background-color: #f5dede; }
+</style>
+</head>
+<body>
+
+  <h2>LAB A</h2>
+  <div class="box a-top"></div>
+  <div class="box a-bottom"></div>
+
+  <h2>LAB B</h2>
+  <div class="box b-ruler"></div>
+  <div class="box b-parent">
+    <div class="box b-child"></div>
+  </div>
+
+  <h2>LAB C</h2>
+  <div class="box c-ruler"></div>
+  <div class="box c-pad">
+    <div class="box c-child"></div>
+  </div>
+
+  <h2>LAB D</h2>
+  <div class="box d-ruler"></div>
+  <div class="box d-tall">
+    <div class="box d-child"></div>
+    <div class="box d-child"></div>
+  </div>
+
+  <h2>LAB E</h2>
+  <div class="box e-ruler"></div>
+  <div class="box e-pad">
+    <div class="box e-child"></div>
+  </div>
+  <div class="box e-after"></div>
+
+  <h2>LAB F</h2>
+  <div class="box f-ruler"></div>
+  <div class="box f-root">
+    <div class="box f-child"></div>
+  </div>
+  <div class="box f-after"></div>
+
+</body>
+</html>
