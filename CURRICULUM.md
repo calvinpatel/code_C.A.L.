@@ -87,9 +87,7 @@
 ### Frontend *(compressed — demo-grade, not mastery)*
 
 - ✅ 🎯 **HTML & CSS Foundations** (July 2026) — Semantic HTML, Flexbox, Grid, responsive design, motion. The minimum viable frontend.
-
-- ⬜ **JavaScript for Python Developers** — *~3–4 lessons* · **W3–4**
-  Syntax differences, async JS, fetch API, DOM manipulation. Leveraging existing CS50 JS exposure.
+- ✅ 🎯 **JavaScript for Python Developers** (August 2026) — Syntax differences, async JS, fetch API, DOM manipulation. Leveraging existing CS50 JS exposure.
 
 - ⬜ **React, Demo-Grade** — *~5 lessons* · **W4**
   Components, props, state, hooks (useState, useEffect), lists and keys, forms, calling my own FastAPI backend. Enough to give NotePilot a face. **Deep dive (Joy of React back half, routing, state management) deferred to application season** — flagships need a UI, not frontend mastery.
