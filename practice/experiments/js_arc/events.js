@@ -37,4 +37,6 @@ const paragraph = document.querySelector("#charcount");
 
 note.addEventListener("input", (event) => {
     paragraph.textContent = `${event.target.value.length} characters`;
+    console.log(event.target.textContent);
+    console.log(event.target.value);
 })
