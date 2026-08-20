@@ -84,13 +84,11 @@
 - ✅ 🎯 **FastAPI** (July 2026) — Route handlers, Pydantic models, dependency injection (fixtures foreshadowed this), background tasks, async endpoints (Async Python arc lands here, pre-L6), OpenAPI docs. Modern Python's favorite web framework and my bridge to AI integration.
 - ✅ 🎯**Security thread** (July 2026) — OAuth2/JWT flows, secrets hygiene, PHI-adjacent data handling, threat-modeling lite. Health-AI targets make this non-negotiable — the SQL injection instinct, promoted to a standing thread.
 
-### Frontend *(compressed — demo-grade, not mastery)*
+### Frontend
 
 - ✅ 🎯 **HTML & CSS Foundations** (July 2026) — Semantic HTML, Flexbox, Grid, responsive design, motion. The minimum viable frontend.
 - ✅ 🎯 **JavaScript for Python Developers** (August 2026) — Syntax differences, async JS, fetch API, DOM manipulation. Leveraging existing CS50 JS exposure.
-
-- ⬜ **React, Demo-Grade** — *~5 lessons* · **W4**
-  Components, props, state, hooks (useState, useEffect), lists and keys, forms, calling my own FastAPI backend. Enough to give NotePilot a face. **Deep dive (Joy of React back half, routing, state management) deferred to application season** — flagships need a UI, not frontend mastery.
+- ✅ 🎯 **React** (August 2026) — Components, props, state, hooks (useState, useEffect), lists and keys, forms, calling my own FastAPI backend. Enough to give NotePilot a face. **Deep dive (Joy of React back half, routing, state management) deferred to application season** — flagships need a UI, not frontend mastery.
 
 ### Shipping *(new — "deployment basics" was one sub-bullet; for my targets it's table stakes)*
 
