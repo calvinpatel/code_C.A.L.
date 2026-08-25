@@ -12,7 +12,7 @@ jobs:
         image: postgres:16
         env:
           POSTGRES_USER: cal
-          POSTGRES_PASSWORD: devpass
+          POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
           POSTGRES_DB: notepilot
         ports:
           - 5432:5432
@@ -23,7 +23,7 @@ jobs:
           --health-retries 10
 
     env:
-      DATABASE_URL: postgresql+psycopg://cal:devpass@localhost:5432/notepilot
+      DATABASE_URL: postgresql+psycopg://cal:${{ secrets.POSTGRES_PASSWORD }}@localhost:5432/notepilot
 
     steps:
       - uses: actions/checkout@v4
