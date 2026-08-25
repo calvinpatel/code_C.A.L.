@@ -6,6 +6,25 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: cal
+          POSTGRES_PASSWORD: devpass
+          POSTGRES_DB: notepilot
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U cal -d notepilot"
+          --health-interval 2s
+          --health-timeout 3s
+          --health-retries 10
+
+    env:
+      DATABASE_URL: postgresql+psycopg://cal:devpass@localhost:5432/notepilot
+
     steps:
       - uses: actions/checkout@v4
 
@@ -17,4 +36,5 @@ jobs:
 
       - run: pip install pytest
 
-      - run: pytest practice/experiments/shipping_arc/l02_compose/test_smoke.py
+      - run: pytest -v
+        working-directory: practice/experiments/shipping_arc/l02_compose
