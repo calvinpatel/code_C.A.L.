@@ -28,13 +28,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - uses: astral-sh/setup-uv@v6
         with:
-          python-version: "3.14"
+          version: "0.11.21"
 
-      - run: pip install -r practice/experiments/shipping_arc/l02_compose/requirements.txt
+      - run: uv sync --locked
+        working-directory: practice/experiments/shipping_arc/l05_lock
 
-      - run: pip install pytest
-
-      - run: pytest -v
-        working-directory: practice/experiments/shipping_arc/l02_compose
+      - run: uv run pytest -v
+        working-directory: practice/experiments/shipping_arc/l05_lock
