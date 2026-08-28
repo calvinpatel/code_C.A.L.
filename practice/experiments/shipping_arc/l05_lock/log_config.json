@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "json": {
+      "()": "logging_setup.JsonFormatter",
+      "app_root": "/Users/calvinpatel/PycharmProjects/code_C.A.L./practice/experiments/shipping_arc/l05_lock"
+    }
+  },
+  "handlers": {
+    "stdout": {
+      "class": "logging.StreamHandler",
+      "stream": "ext://sys.stdout",
+      "formatter": "json"
+    }
+  },
+  "loggers": {
+    "uvicorn": {
+      "handlers": [
+        "stdout"
+      ],
+      "level": "INFO",
+      "propagate": false
+    },
+    "uvicorn.error": {
+      "level": "INFO"
+    },
+    "uvicorn.access": {
+      "handlers": [
+        "stdout"
+      ],
+      "level": "INFO",
+      "propagate": false
+    }
+  },
+  "root": {
+    "handlers": [
+      "stdout"
+    ],
+    "level": "INFO"
+  }
+}
