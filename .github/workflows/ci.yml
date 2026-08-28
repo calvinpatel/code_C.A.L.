@@ -2,6 +2,10 @@ name: CI
 
 on:
   push:
+    paths:
+      - "practice/experiments/shipping_arc/**"
+      - ".github/workflows/ci.yml"
+  workflow_dispatch:
 
 jobs:
   test:
