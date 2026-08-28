@@ -92,8 +92,7 @@
 
 ### Shipping *(new — "deployment basics" was one sub-bullet; for my targets it's table stakes)*
 
-- ⬜ **Shipping & Infrastructure** — *~4–5 lessons* · **W5**
-  Docker + docker-compose, GitHub Actions CI (run the pytest suite on every push — callback to the Testing arc), deployment platforms (Render, Railway, Vercel), secrets management, structured logging. Environment isolation, secrets, and audit logging aren't DevOps trivia — they're **compliance primitives**. Prelude's HIPAA path is impossible without infrastructure thinking. Ends with 🚩 first live deploy.
+- ✅ 🎯 **Shipping & Infrastructure** (August 2026) — Docker + docker-compose, GitHub Actions CI (run the pytest suite on every push — callback to the Testing arc), deployment platforms (Render, Railway, Vercel), secrets management, structured logging. Environment isolation, secrets, and audit logging aren't DevOps trivia — they're **compliance primitives**. Prelude's HIPAA path is impossible without infrastructure thinking. Ends with 🚩 first live deploy.
 
 - ⬜ **Git as a Team Sport** — *~2–3 lessons* · threads through W1–5
   Branching strategies, PRs and code review, rebase vs merge, conventional commits. Solo committing ≠ collaborative workflow — every target job works this way, and the bidirectional Ship Mode gate is already a code-review ritual; this formalizes the Git mechanics around it.
