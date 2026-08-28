@@ -6,9 +6,7 @@ from fastapi.responses import JSONResponse
 
 from sqlalchemy import text
 from db import engine
-from logging_setup import configure_logging
 
-configure_logging()
 log = logging.getLogger("notepilot.api")
 app = FastAPI()
 

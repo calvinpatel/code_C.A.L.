@@ -9,4 +9,4 @@ RUN uv sync --locked --no-dev
 
 COPY . .
 ENV PATH="/app/.venv/bin:$PATH"
-CMD ["sh", "-c", "exec uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["sh", "-c", "exec uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000} --log-config log_config.json"]
