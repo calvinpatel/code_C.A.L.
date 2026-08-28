@@ -47,7 +47,7 @@ LOGGING_CONFIG = {
     "version": 1,
     "disable_existing_loggers": False,
     "formatters": {
-        "json": {"()": "logging_setup.JsonFormatter", "app_root": APP_ROOT},
+        "json": {"()": "logging_setup.JsonFormatter"},
     },
     "handlers": {
         "stdout": {
