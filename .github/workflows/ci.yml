@@ -5,6 +5,8 @@ on:
     paths:
       - "practice/experiments/shipping/shipping_arc/**"
       - ".github/workflows/ci.yml"
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
