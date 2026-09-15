@@ -97,8 +97,7 @@
 
 ### Integration
 
-- ⬜ **Full-Stack Application Architecture** — *~2–3 lessons* · folded into W4–5 and the NotePilot build
-  Connecting React ↔ FastAPI, API design patterns, auth flows end-to-end. (Deployment content moved to Shipping & Infrastructure.)
+- ✅ 🎯 **Full-Stack Application Architecture** (September 2026) — Connecting React ↔ FastAPI, API design patterns, auth flows end-to-end. (Deployment content moved to Shipping & Infrastructure.)
 
 ---
 
@@ -106,7 +105,7 @@
 
 *Goal: Build AI-powered products. Not training models — integrating, orchestrating, and productizing existing ones. The rhythm of this phase: learn → **build** → learn → **build**. Nothing sits unapplied for long; every arc has a visible destination.*
 
-- ⬜ **Prompt Engineering + LLM APIs & SDKs** — *~5–6 lessons* · **W6**
+- 🔄 **Prompt Engineering + LLM APIs & SDKs** — *~5–6 lessons* · **W6**
   Merged into one arc — I've already made raw authenticated calls to the Anthropic API. System prompts, few-shot, chain-of-thought, prompt templates; streaming responses, tool use / function calling, structured outputs, multi-turn conversations, token management, cost optimization.
 
 - ⬜ **Evals & LLM Testing** — *~3–4 lessons* · **W7** · ⚔️ **THE MOAT ARC**
