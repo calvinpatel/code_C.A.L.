@@ -107,8 +107,7 @@
 
 - ✅ 🎯 **Prompt Engineering + LLM APIs & SDKs** (September 2026) — System prompts, few-shot, chain-of-thought, prompt templates; streaming responses, tool use / function calling, structured outputs, multi-turn conversations, token management, cost optimization.
 
-- 🔄 **Evals & LLM Testing** — *~3–4 lessons* · **W7** · ⚔️ **THE MOAT ARC**
-  Pulled forward from the end of the phase — the moat should not be the final boss, it should be the second weapon forged. Eval design, trap corpora, LLM-as-judge and its failure modes, severity triage, regression evals. Direct continuation of THE BRIDGE from the Testing arc: fuzzy asserts over a parametrize table.
+- ✅ 🎯 **Evals & LLM Testing** (September 2026) — Eval design, trap corpora, LLM-as-judge and its failure modes, severity triage, regression evals. Direct continuation of THE BRIDGE from the Testing arc: fuzzy asserts over a parametrize table.
 
 ### ◆ GATE: BUILD NOTEPILOT — *W8–10*
 > Spec locked (`PROJECT_01_NOTEPILOT.md`), constitution written, adversarial review done. Three weeks of **pure execution** — the deciding was already bled for.
