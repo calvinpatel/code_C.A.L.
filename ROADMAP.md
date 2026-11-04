@@ -12,7 +12,7 @@ I build AI and scientific software for health and neuroscience. I've written Pyt
 
 | Research | Years | Work |
 |---|---|---|
-| Yang Lab, UCLA | 2021–2022 | 3D dendritic reconstruction of striatal medium spiny and cortical pyramidal neurons (neuTube, SWC) for large-scale morphology studies in Huntington's and Parkinson's disease mouse models |
+| Yang Lab, UCLA | 2021–2022 | 3D dendritic reconstruction of striatal medium spiny and cortical pyramidal neurons (neuTube, SWC) for large-scale morphology studies in Huntington's and Parkinson's disease mouse models; member of the reconstruction team credited in Park et al., *Nature Neuroscience* (2025) |
 | Mehta Lab, UCLA | 2020–2022 | Tetrode fabrication for chronic multi-region recordings; analysis of single-unit data across hippocampus and neocortex |
 | Cedars-Sinai | 2021 | MATLAB/Python burst-detection and spike-annotation pipeline for in-vivo single-neuron recordings |
 | Kornblum Lab, UCLA | 2020–2022 | Cryosectioning, immunofluorescent staining, and neural stem cell culture |
@@ -24,7 +24,7 @@ I build AI and scientific software for health and neuroscience. I've written Pyt
 | Project | What it is | Status |
 |---|---|---|
 | **[NotePilot](https://github.com/calvinpatel/notepilot)** | Clinical SOAP-note summarizer built as a staged LLM pipeline, with an evaluation harness (synthetic adversarial cases such as a planted penicillin contraindication, severity-triaged failures) and a results dashboard. <!-- add live demo URL at launch --> | ✅ Complete |
-| **Arbor** | Neuron morphology toolkit: parses SWC reconstructions, computes tree-based morphometrics (length, branching, Sholl analysis) validated against NeuroMorpho.Org reference measurements, and serves an interactive 3D viewer. | ⬜ Next |
+| **Dendrometer** | Neuron morphology toolkit: parses SWC reconstructions, computes tree-based morphometrics (length, branching, Sholl analysis) validated against published reference measurements, and serves an interactive 3D viewer. | ⬜ Next |
 | **TrialMatch** | Clinical-trial matching agent: a bounded retrieval loop feeds a fixed evaluation stage that scores each eligibility criterion as met, failed, or unknown, then ranks trials by actionability. | ⬜ Planned |
 | **Prelude** | Pre-visit clinical intake: a free-text complaint drives a tailored questionnaire and produces a structured history summary for the clinician. Safety-critical logic is deterministic; the LLM is limited to constrained classification and grounded summarization. | ⬜ Planned |
 
@@ -38,7 +38,7 @@ flowchart LR
     P2 --> SP["Scientific Python"] --> P4
     NP{{"NotePilot ✅"}}
     P3 -.- NP
-    SP -.- AR{{"Arbor"}}
+    SP -.- AR{{"Dendrometer"}}
     P3 -.- TM{{"TrialMatch"}}
     P3 -.- PR{{"Prelude"}}
     AR -.- P4
@@ -80,7 +80,7 @@ Goal: build and ship full-stack applications.
 
 ## Scientific Python
 
-Goal: production fluency in the numerical stack behind scientific software and embeddings. Applied directly in Arbor.
+Goal: production fluency in the numerical stack behind scientific software and embeddings. Applied directly in Dendrometer.
 
 - ⬜ **NumPy** — arrays, vectorization, broadcasting
 - ⬜ **SciPy** — statistics, spatial data structures
@@ -109,7 +109,7 @@ Goal: move from integrating models to training and adapting them. A shared found
 ```
 
 - ⬜ **PyTorch Fundamentals** — tensors, autograd, training loops, datasets and data loaders, MLOps basics
-- ⬜ **4A: Imaging & Scientific ML** — image processing and segmentation, large volumetric datasets (chunked cloud formats, BossDB via `intern`, CloudVolume), Arbor v2 on EM-derived MICrONS neuron skeletons, a learned neuron-tracing model
+- ⬜ **4A: Imaging & Scientific ML** — image processing and segmentation, large volumetric datasets (chunked cloud formats, BossDB via `intern`, CloudVolume), Dendrometer v2 on EM-derived MICrONS neuron skeletons, a learned neuron-tracing model
 - ⬜ **4B: Clinical NLP** — clinical text processing (negation, entity extraction, de-identification), parameter-efficient fine-tuning, and when fine-tuning beats prompting
 
 ---
