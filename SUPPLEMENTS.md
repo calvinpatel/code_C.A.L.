@@ -1,136 +1,115 @@
-# SUPPLEMENTS.md
+# Supplements
 
-Companion to [`CURRICULUM.md`](./CURRICULUM.md). Supplemental learning resources correlated **arc-by-arc** to the curriculum, aimed at the **AI Product Engineer → Applied AI/ML Engineer** trajectory.
+Courses, documentation, and references that support [`ROADMAP.md`](./ROADMAP.md), organized by phase. Progress lives in the roadmap; this file is the resource list.
 
-> **Philosophy:** Project-first. Current tooling. Free-or-cheap by default. Paid only when the mental model is genuinely better. Supplements run at roughly 20–30% of learning time per phase — Claudia's arcs and the flagship builds are the main course; these are seasoning.
->
-> **The video rule:** Video earns a slot only when the medium wins — (a) watching someone *drive* something (terminals, dashboards, deploys), (b) inherently visual subjects, (c) algorithm pattern intuition. Otherwise text/docs/interactive labs are faster, and video is a comfort trap.
+**How I choose resources**
 
-**Role tags** *(when a supplement slots relative to a Claudia arc)*:
-- 🌅 **Prelude** — before the arc; builds intuition so lessons land harder
-- 🔧 **Intra-lesson** — alongside; reference or practice as topics surface
-- 🌙 **Wrap-up** — after; consolidation, depth, or spaced reinforcement
-
-**Sprint weeks** (W1–W12) reference the operating plan in `CURRICULUM.md`.
+- **Project-first.** Resources support structured study and the projects; they're never the main path.
+- **Official and current first.** Maintainer-written docs and courses before third-party summaries.
+- **Free by default.** Paid only when the mental model is clearly better.
+- **Video only when the medium wins:** watching someone drive a tool (terminals, deploys, CI dashboards), inherently visual subjects, or building pattern intuition. Otherwise, text, docs, and interactive labs are faster.
 
 ---
 
-## ⚰️ Retired & Completed
+## Phase 1 — Python Core
 
-*Kept for the record — knowing what was cut and why is part of the map.*
+- **[CS50x](https://cs50.harvard.edu/x/)** and **[CS50P](https://cs50.harvard.edu/python/)** (Harvard) — Free. Computer science fundamentals, then Python. Exercises in `practice/cs50p/`.
+- **100 Days of Code: The Complete Python Pro Bootcamp** (Angela Yu, Udemy) — Paid. Project-a-day practice. Exercises in `practice/angela_yu/`.
+- **[Real Python](https://realpython.com)** — Paid. Tutorial reference throughout Phase 1.
 
-- ~~**The Odin Project — Full-Stack JS path**~~ — **CUT.** Made sense against a 15-lesson frontend arc; against a 12-week sprint with demo-grade React it cannibalizes build time (Flatiron-bootcamp logic). Its portfolio artifact is strictly dominated by the flagships.
-- ~~**Real Python**~~ — **Cancel the subscription.** Phase 1 complete; the "3–4 months then cancel" clock has run. Resubscribe-if-needed reference only.
-- ~~**SQLBolt / Mode SQL Tutorial**~~ — SQL arc ✅ 🎯. Retired.
-- ~~**Obey the Testing Goat**~~ — Testing arc ✅ 🎯, and its Django/Selenium lane isn't mine. Retired with honors; THE BRIDGE lives on in the evals arc.
-- ~~**DLAI: Building Systems with the ChatGPT API / LangChain for LLM App Dev / Functions, Tools & Agents with LangChain / Agentic RAG with LlamaIndex**~~ — Superseded by **Anthropic Academy** (Claude-centric, official, free, certificated) and by LangChain's demotion to a survey in the curriculum.
+## Phase 2 — Web Foundations
 
----
+### HTTP, SQL & ORMs
 
-## 🌐 PHASE 2 — Remaining Arcs
+- **[SQLBolt](https://sqlbolt.com)** and **Mode's SQL Tutorial** — Free. Interactive SQL practice.
+- **techTFQ** and **Database Star** (YouTube) — Free. Query patterns and schema design.
+- **[SQLAlchemy documentation](https://docs.sqlalchemy.org)** — Free. The ORM reference of record.
 
-### FastAPI + async + security thread · *W1–2*
+### FastAPI & security
 
-- 🌅🔧 **Sanjeev Thiyagarajan — FastAPI full course (freeCodeCamp, ~19 hrs)** — Free, YouTube. *The* one long-form video commitment; video wins here (watching someone drive a real API build end-to-end, incl. Postgres, auth, deployment). Stay in PyCharm; adapt, don't switch. Consume in slices synced to lessons, not as a binge.
-- 🔧 **[FastAPI Official Tutorial](https://fastapi.tiangolo.com/tutorial/)** — Tiangolo's docs. Free. The reference of record; the Security section is the intra-lesson companion for the OAuth2/JWT lessons specifically.
-- 🔧 **[PortSwigger Web Security Academy](https://portswigger.net/web-security)** — Free, interactive labs. **Security-thread anchor.** Cherry-pick: authentication vulnerabilities, JWT attacks, SQL injection (arc callback), access control. Interactive labs beat both video and reading here — you *break* things.
-- 🌙 **[OWASP Top 10](https://owasp.org/www-project-top-ten/)** — Free, one-afternoon read after the security lessons. The shared vocabulary every health-tech interview expects.
-- 🌙 **ArjanCodes (YouTube)** — Free. Architecture/refactoring critiques of FastAPI + Python design. Wrap-up viewing: sharpens taste after the mechanics land.
+- **Sanjeev Thiyagarajan — FastAPI course** (freeCodeCamp, YouTube, ~19 hrs) — Free. A full API build end to end: Postgres, auth, testing, deployment.
+- **[FastAPI tutorial](https://fastapi.tiangolo.com/tutorial/)** — Free. The official reference; its Security section covers OAuth2 and JWT.
+- **[PortSwigger Web Security Academy](https://portswigger.net/web-security)** — Free. Interactive labs on authentication, JWT attacks, SQL injection, and access control.
+- **[OWASP Top 10](https://owasp.org/www-project-top-ten/)** — Free. The shared vocabulary for web application risk.
+- **ArjanCodes** (YouTube) — Free. Architecture and refactoring critiques of Python and FastAPI design.
 
-### Frontend, compressed · *W3–4*
+### Frontend
 
-- 🔧 **[Josh Comeau's free interactive guides](https://www.joshwcomeau.com)** — Flexbox and Grid interactive articles. Free. The Joy of React author's blog; the interactive widgets ARE the mental model.
-- 🔧 **Kevin Powell (YouTube)** — Free. CSS is a visual subject; video wins. Targeted hits only (flexbox, grid, responsive patterns) — not a playlist binge.
-- 🔧 **[MDN Web Docs](https://developer.mozilla.org)** — Free. The JS reference of record for the JS-for-Python-devs arc.
-- 🔧 **[react.dev — Learn React](https://react.dev/learn)** — Free, official. The demo-grade React path: exactly the compressed scope (components, props, state, hooks, forms). This IS the arc's textbook.
-- ⏸️ **[The Joy of React](https://www.joyofreact.com)** — Josh Comeau, ~$300 (wait for ~$200 sale). **Still the one paid course worth defending — but deferred to application season** with the React deep dive. Buying it in W3 would tempt scope creep past demo-grade.
+- **[Josh Comeau's interactive guides](https://www.joshwcomeau.com)** — Free. Flexbox and Grid, taught through interactive widgets.
+- **Kevin Powell** (YouTube) — Free. CSS layout and responsive patterns.
+- **[MDN Web Docs](https://developer.mozilla.org)** — Free. The JavaScript and web platform reference.
+- **[react.dev — Learn React](https://react.dev/learn)** — Free. The official path: components, props, state, hooks, forms.
+- **[The Joy of React](https://www.joyofreact.com)** (Josh Comeau) — Paid. Deeper React mental models, including rendering, state management, and routing patterns.
 
-### Shipping & Infrastructure · *W5*
+### Shipping & infrastructure
 
-- 🌅 **[The Twelve-Factor App](https://12factor.net)** — Free, ~30-min read. The prelude: *why* config lives in the environment, why logs are streams. Makes every Docker lesson land as "oh, that's factor III" instead of arbitrary ritual.
-- 🌅🔧 **TechWorld with Nana — Docker crash course + GitHub Actions tutorial (YouTube)** — Free. Video wins decisively for ops: watching someone drive terminals, Dockerfiles, and CI dashboards is the medium. ~3 hrs Docker + ~1 hr Actions.
-- 🔧 **[Docker — Get Started docs](https://docs.docker.com/get-started/)** + **[GitHub Actions quickstart](https://docs.github.com/actions/quickstart)** — Free. Reference of record while building the actual pipeline (pytest-on-push is the arc capstone).
-- 🌙 **[MIT — The Missing Semester](https://missing.csail.mit.edu)** — Free. Demoted from "full ~10 lectures" to **cherry-picked**: shell tools, debugging/profiling, and the git lecture (see next arc). High ROI for the self-taught; the rest is optional dessert.
+- **[The Twelve-Factor App](https://12factor.net)** — Free. Why configuration lives in the environment and logs are event streams.
+- **TechWorld with Nana** (YouTube) — Free. Docker and GitHub Actions walkthroughs.
+- **[Docker: Get Started](https://docs.docker.com/get-started/)** and **[GitHub Actions quickstart](https://docs.github.com/actions/quickstart)** — Free. References for building the actual pipeline.
 
-### Git as a Team Sport · *threads through W1–5*
+### Git for teams
 
-- 🔧 **[Learn Git Branching](https://learngitbranching.js.org)** — Free, interactive. Branching/rebase/merge as a visual puzzle game — interactive beats everything for this topic.
-- 🌅 **Missing Semester — Git lecture** — Free video. Git's *data model* (the content-addressed DAG underneath), which makes rebase-vs-merge obvious instead of memorized.
-- 🔧 **[Oh Shit, Git!?!](https://ohshitgit.com)** — Free. The panic-recovery reference. Bookmark, don't study.
-- 🌙 **[Conventional Commits spec](https://www.conventionalcommits.org)** — Free, 10-min read. Already half-adopted in code_C.A.L.; this formalizes it.
+- **[Learn Git Branching](https://learngitbranching.js.org)** — Free. Branching, rebasing, and merging as interactive visual puzzles.
+- **[Oh Shit, Git!?!](https://ohshitgit.com)** — Free. Recovery recipes for common mistakes.
+- **[Conventional Commits](https://www.conventionalcommits.org)** — Free. The commit message convention used in this repo.
 
----
+## Scientific Python
 
-## ⚡ DS&A PARALLEL TRACK · *now → W12*
+- **[Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)** (Jake VanderPlas) — Free online. The NumPy and Matplotlib chapters.
+- **[Scientific Python Lectures](https://lectures.scientific-python.org)** — Free. NumPy, SciPy, plotting, and image processing with scikit-image, edited by core developers of the stack.
+- **[From Python to Numpy](https://www.labri.fr/perso/nrougier/from-python-to-numpy/)** (Nicolas Rougier) — Free. Vectorization: replacing Python loops with array operations.
+- **[numpy-100](https://github.com/rougier/numpy-100)** — Free. One hundred graded NumPy exercises.
+- **3Blue1Brown — Essence of Linear Algebra** (YouTube) — Free. Vectors, dot products, and transformations; groundwork for embeddings.
 
-- 🔧 **NeetCode 150 / Blind 75 (neetcode.io + YouTube)** — Free. Already canon. The explanation videos are the supplement: pattern intuition is the third case where video wins. Rule: 25 minutes honest attempt → watch → redo pile.
-- 🌙 **NeetCode pattern-intro videos per new pattern** — 🌅 before entering each new pattern family (sliding window, graphs, DP-lite), one overview video; then problems.
-- ❌ **Skipped deliberately:** Grokking the Coding Interview (paid, redundant with NeetCode), AlgoMonster, LeetCode Premium (revisit only if a target company's question bank matters in W11–12).
+## Phase 3 — AI / LLM Integration
 
----
+- **Andrej Karpathy — "Intro to Large Language Models" and "Deep Dive into LLMs"** (YouTube) — Free. What sits under the API: tokens, training, RLHF, and why models hallucinate.
 
-## 🤖 PHASE 3 — AI/LLM Integration
+### Prompt engineering + LLM APIs
 
-*The highest-leverage phase for supplements — and the phase where the supplement landscape changed most. **Anthropic Academy** (launched March 2026, `anthropic.skilljar.com`) is now the spine: official, free, self-paced, certificate per course. Education + recon + the one cert genre that reads as real signal, because it comes from the model provider itself.*
+- **[Anthropic Academy](https://anthropic.skilljar.com) — Building with the Claude API** — Free, certificate. Auth, streaming, tool use, prompt caching, extended thinking, and production patterns: error handling, retries, rate limiting, batching.
+- **[Anthropic Prompt Engineering Interactive Tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)** and **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** — Free. Hands-on notebooks and a recipe reference.
 
-### Prompt Engineering + LLM APIs · *W6*
+### Evals & LLM testing
 
-- 🌅 **Andrej Karpathy — "Intro to Large Language Models" (1 hr) → "Deep Dive into LLMs" (3.5 hr, optional)** — Free, YouTube. The Phase 3 prelude: the best free grounding in what's actually under the API (tokens, training, RLHF, why models hallucinate). This is the depth that separates candidates in AI-company interviews. Conceptual-video exception, fully earned.
-- 🔧 **Anthropic Academy — "Building with the Claude API"** — Free, official, certificate. 8+ hrs / 84 lectures: auth, streaming, tool use, prompt caching, extended thinking, and production patterns (error handling, retry logic, rate limiting, batching) in Python + TS. **The W6 anchor supplement** — and direct recon on how Anthropic engineers think.
-- 🔧 **[Anthropic Prompt Engineering Interactive Tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)** + **[Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)** — Free. Notebooks = learn by doing; Cookbook doubles as the reference shelf for the NotePilot build.
+- **Hamel Husain — "Your AI Product Needs Evals"** — Free essay.
+- **Anthropic's evaluation guides and Cookbook eval notebooks** — Free. Working patterns for building test sets and graders.
+- **Eugene Yan — "Patterns for Building LLM-based Systems & Products"** — Free. The evals and guardrails sections.
+- **Chip Huyen — *AI Engineering*** (O'Reilly) — The evaluation chapters.
 
-### Evals & LLM Testing — THE MOAT ARC · *W7*
+### Embeddings, vector databases & RAG
 
-- 🌅 **Hamel Husain — "Your AI Product Needs Evals"** — Free essay. The closest thing the field has to a canonical text on the moat. Read before Lesson 1.
-- 🔧 **Anthropic docs — empirical evaluation guides + Cookbook eval notebooks** — Free. Working examples to steal patterns from while building the NotePilot trap corpus.
-- 🌙 **Eugene Yan — "Patterns for Building LLM-based Systems & Products"** — Free. The evals + guardrails sections; wrap-up synthesis.
-- 🌙 **Chip Huyen — *AI Engineering*, evaluation chapters** — Already owned (see `cals_ai_reading_list.md`). The deep-work-canon cross-reference for this arc; read the eval chapters the weekend after the arc closes.
+- **[DeepLearning.AI — Building and Evaluating Advanced RAG](https://www.deeplearning.ai/short-courses/)** — Free. Chunking, hybrid search, reranking, and retrieval evaluation.
+- **pgvector documentation** and **Anthropic Cookbook RAG and citations recipes** — Free. Postgres-native vector search and grounded answers.
 
-### ◆ NotePilot build · *W8–10*
-> **No new supplements during builds.** The spec, the constitution, and the Cookbook reference shelf are the whole diet. Supplement consumption during a build gate is procrastination wearing a productivity costume.
+### Agents + MCP
 
-### Embeddings, Vector DBs & RAG · *W11 core; regrounding = v2*
+- **Anthropic — "Building Effective Agents"** — Free essay. Workflows vs. agents, and when not to build an agent.
+- **Anthropic Academy — Introduction to MCP → MCP: Advanced Topics** — Free, certificates. Building MCP servers and clients in Python, transports, and production patterns.
+- **[Hugging Face Agents Course](https://huggingface.co/learn/agents-course)** — Free, certificate. How the wider ecosystem frames agents.
+- **LangChain and LangGraph documentation** — Free. Survey depth: enough to read and discuss code that uses them.
 
-- 🔧 **[DeepLearning.AI — "Building and Evaluating Advanced RAG"](https://www.deeplearning.ai/short-courses/)** — Free, ~1–2 hrs. The one DLAI short course that survived the audit: chunking, hybrid search, reranking, *and* retrieval evals (moat callback). Check the current catalog for a newer equivalent when W11 arrives — this shelf turns over fast.
-- 🔧 **pgvector docs + Anthropic Cookbook RAG/citations recipes** — Free. Postgres-native vectors keep the NotePilot stack coherent (no new database vendor for v2).
+### Production AI engineering
 
-### Agentic AI + MCP · *application season*
+- **Langfuse documentation** — Free, open source. Tracing, cost, and latency monitoring for LLM applications.
+- **Chip Huyen — *AI Engineering*** (production chapters) and **Eugene Yan and Hamel Husain's production writing** — Synthesis reading.
 
-- 🌅 **Anthropic — "Building Effective Agents"** — Free essay. The canonical taxonomy (workflows vs agents, when NOT to build an agent). TrialMatch's bounded-loop design is already this essay's philosophy; read it to name what you built.
-- 🔧 **Anthropic Academy — "Introduction to MCP" → "MCP: Advanced Topics"** — Free, official, certificates. Build MCP servers/clients in Python; the advanced course covers transports and production patterns. Consistently rated the most valuable courses in the catalog — and "built an MCP server" is a legible portfolio line.
-- 🌙 **[Hugging Face Agents Course](https://huggingface.co/learn/agents-course)** — Free, certificate. Breadth pass after TrialMatch ships: see how the non-Anthropic half of the ecosystem frames agents.
-- 🔧 **LangChain/LangGraph official docs, survey-depth only** — Free. Enough LCEL/LangGraph to converse and read others' code. Matches the curriculum demotion; no course needed.
+## Phase 4 — Applied ML
 
-### Production AI Engineering · *application season*
+*A starting shortlist, finalized when the phase begins.*
 
-- 🔧 **Langfuse docs + self-host quickstart** — Free/OSS. Instrument NotePilot for real: traces, cost, latency. The observability lesson becomes a portfolio screenshot.
-- 🌙 **Chip Huyen — *AI Engineering*, production chapters** + **Eugene Yan / Hamel Husain production posts** — Free/owned. The synthesis shelf.
+- **[PyTorch tutorials](https://pytorch.org/tutorials/)** — Free. Tensors, autograd, and training loops.
+- **3Blue1Brown — Neural Networks** (YouTube) — Free. Gradient descent and backpropagation, visually.
+- **[Generative AI with LLMs](https://www.coursera.org/learn/generative-ai-with-llms)** (DeepLearning.AI / AWS, Coursera) — Free to audit. Pretraining, fine-tuning, and RLHF.
+- **4A · Imaging & scientific ML:** **[Neuromatch Academy](https://neuromatch.io)** — Free, open course materials in computational neuroscience and deep learning — plus the scikit-image chapter of the Scientific Python Lectures.
+- **4B · Clinical NLP:** **[Hugging Face NLP Course](https://huggingface.co/learn/nlp-course)** — Free, certificate. Transformers, tokenizers, and fine-tuning.
 
----
+## Ongoing
 
-## 🛠️ TOOLING TRACK *(ongoing, low-dose)*
-
-- 🔧 **Anthropic Academy — "Claude Code 101" → "Claude Code in Action" → "Introduction to Agent Skills" → "Introduction to Subagents"** — Free, ~2–3 hrs combined, certificates. Already a daily Claude Code driver in Split/Ship mode — these fill gaps you don't know you have (hooks, subagent delegation, Skills vs CLAUDE.md). Slot into low-energy evenings; they compound the force multiplier.
-
----
-
-## 🎤 APPLICATION SEASON
-
-- 🔧 **The Joy of React** — Now it earns its ~$200–300: the React deep dive slot exists in Phase 3.5 and the mental-model teaching is the point. The one paid course, still defended.
-- 🌙 **[Hugging Face NLP Course](https://huggingface.co/learn/nlp-course)** — Free, certificate. Phase 4 on-ramp; the real artifact is a fine-tuned model on HF Hub.
-- 🌙 **[Generative AI with LLMs (DeepLearning.AI / AWS, Coursera)](https://www.coursera.org/learn/generative-ai-with-llms)** — Free to audit. Re-slotted from Phase 3 core to here: what's *under* the API (pretraining, fine-tuning, RLHF) — pairs with Karpathy's deep dive and bridges toward Phase 4.
+- **Anthropic Academy — Claude Code 101 → Claude Code in Action → Introduction to Agent Skills → Introduction to Subagents** — Free, certificates. Hooks, subagent delegation, and Skills vs. `CLAUDE.md`.
+- **[MIT — The Missing Semester](https://missing.csail.mit.edu)** — Free. Shell tools, debugging and profiling, and git's data model.
+- **ArjanCodes** and **Fireship** (YouTube) — Free. Python design critiques, and fast overviews of new tools.
 
 ---
 
-## 📜 Cert Posture *(revised)*
-
-Hiring for the target list is portfolio + interview signal; certs are tiebreakers — **with one new exception**:
-
-- **Anthropic Academy certificates** — the exception that proves the rule. Free, issued directly by the model provider, LinkedIn-legible, and earned as a byproduct of courses worth taking anyway. Collect them incidentally; never chase them.
-- **Defer to Phase 4:** AWS Certified Machine Learning Engineer – Associate. Genuinely useful for applied ML roles, but only meaningful once skills are in place.
-- **Skip:** TensorFlow Developer Cert (discontinued 2024), Azure AI-102 (wrong cloud for the target list), generic Udemy/Coursera "AI Engineer" certs.
-
----
-
-*Last updated: July 2026 — correlated to the CURRICULUM.md sprint revision*
-*Maintained by: Cal · audit performed with Claudia* ◡̈
+*Last updated: November 2026*
