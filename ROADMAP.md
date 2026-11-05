@@ -92,6 +92,7 @@ Goal: build AI-powered products by integrating, orchestrating, and evaluating ex
 
 - ✅ **Prompt Engineering + LLM APIs** (Sep 2026) — system prompts, few-shot, chain-of-thought, templates; streaming, tool use, structured outputs, multi-turn conversations, token and cost management
 - ✅ **Evals & LLM Testing** (Sep 2026) — eval design, adversarial test corpora, LLM-as-judge and its failure modes, severity triage, regression evals
+- ⬜ **Agentic Development with Claude Code** — the agent loop and context management, plan-then-verify workflow, CLAUDE.md and project rules, skills, hooks and permissions, MCP servers as a user, subagents and parallel sessions
 - ⬜ **Embeddings & Vector Databases** — embeddings, semantic search, pgvector and Chroma, RAG vs. fine-tuning vs. long context
 - ⬜ **Retrieval-Augmented Generation** — ingestion, chunking, hybrid search, reranking, citations, retrieval evaluation
 - ⬜ **Agents + MCP** — tool-using agents, planning, ReAct, multi-agent systems, agent evaluation, building MCP servers; a survey of LangChain and LangGraph
