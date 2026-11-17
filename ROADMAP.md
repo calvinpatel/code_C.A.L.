@@ -82,8 +82,8 @@ Goal: build and ship full-stack applications.
 
 Goal: production fluency in the numerical stack behind scientific software and embeddings. Applied directly in Dendrometer.
 
-- ⬜ **NumPy** — arrays, vectorization, broadcasting
-- ⬜ **SciPy** — statistics, spatial data structures
+- ✅ **NumPy** (Nov 2026) — arrays, vectorization, broadcasting
+- 🔄 **SciPy** — statistics, spatial data structures
 - ⬜ **Visualization** — matplotlib, interactive 3D plotting
 
 ## Phase 3 — AI / LLM Integration
